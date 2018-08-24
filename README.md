@@ -1,7 +1,7 @@
 # ONS method
 
 This repository contains some Julia implementations for ONS method and others methods for LOVO functions.
-Our intent is to show a new model which is based on LOVO functions introduced in [1,2] and [3]. This model is 
+Our intent is to show a new model which is based on LOVO functions introduced in [1,2,3,4] and [5]. This model is 
 called ONS (Ordered Nonlinear Systems) and requires some attention with differentiabilty of involved functions. 
 
 By this reason, we developed the **ONS method** which is an adaptation of Newton 
@@ -18,7 +18,7 @@ have tested.
 In main directory, we have:  
 - ```ons.jl```- is an implementation of ONS method;  
 - ```ons_benchmarks.jl``` - is an implementation to make benchmarks of ONS method using the dataset given in ```examples``` folder;  
-- ```gn.jl```- is an implementation of and adaptation of Gauss-Newton method to solve LOVO functions, see [3];
+- ```gn.jl```- is an implementation of and adaptation of Gauss-Newton method to solve LOVO functions, see [5];
 - ```gn_benchmarks.jl```- is an implementation to make benchmarks of GN method using the dataset given in ```examples``` folder;
 - ```nm.jl```- is an implementation to solve LOVO function by Nelder-Mead algorithm. The implementation of Nelder-Mead (NM) algorithm used here, is part of the package [Optim.jl](https://github.com/JuliaNLSolvers/Optim.jl). 
 - ```nm_benchmarks.jl```- is an implementation to make benchmarks of NM tested, using the dataset given in ```examples``` folder;
@@ -87,5 +87,11 @@ After running all benchmarks, if you to see the perfomance table of all methods 
 - Jair da Silva
 
 
+## References
 
+[1] Andreani, R., Dunder, C. and Martínez, J. M. (2003). Order-Value Optimization: formulation and solution by means of a primal Cauchy method. Mathematical Methods of Operations Research, 58(3): 387-399.  
+[2] Andreani, R., Dunder C. and Martínez, J. M. (2005). Nonlinear programming reformulation of the order-value optimization problem. Mathematical Methods and Operations Research, 61 (3): 365-384.  
+[3] Andreani, R. Martínez, J. M., Martínez, L. and Yano, F. S. (2008). Continuous optimization methods for structure alignments. Mathematical Programming, 112 (1) : 93-124.  
+[4] Andreani, R., Martínez, J. M., Martínez, L. and Yano, F. S. (2009). Low Order Value Optimization and applications. Journal of Global Optimization, 43 (1): 1-22.  
+[5] Andreani, R., Cesar, G., Cesar-Jr, R. M., Martinez, J. M., & Silva, P. J. S. (2007, October). Efficient curve detection using a Gauss-Newton method with applications in agriculture. In Proc. 1st International Workshop on Computer Vision Applications for Developing Regions in Conjunction with ICCV 2007-CVDR-ICCV07.
 
